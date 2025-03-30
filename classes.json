@@ -1,0 +1,10 @@
+{
+    "classes": [
+        "saa", "re", "ga", "ma", "pa", "dha", "ni", "re-", "ga-", "dha-", "ni-", "ma#", 
+        "saa'", "re'", "ga'", "ma'", "pa'", "dha'", "re-'", "ga-'", "ma#'", 
+        "ma,", "ma#,", "pa,", "dha-,", "dha,", "ni-,", "ni,", 
+        ",", "-"
+    ],
+    "version": "1.0",
+    "last_updated": "2025-03-25"
+}
