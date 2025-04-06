@@ -132,3 +132,39 @@ def finalize_segmentation_and_lists():
         subgroup_results[subgroup_range]['lyrics_articulation_checks'] = lyrics_articulation_checks
 
     save_lists_in_subgroups(subgroup_results)
+
+# ------------------------------------------------------------------------------------------------
+
+def categorize_flatten_predictions(predictions, row_categories):
+    """Categorizes predictions into sthayee, antara, sanchari, aabhog"""
+    sthayee = {"swar": [], "kann_swar": []} if "sthayee" in row_categories else None
+    antara = {"swar": [], "kann_swar": []}  if "antara" in row_categories else None
+    sanchari = {"swar": [], "kann_swar": []} if "sanchari" in row_categories else None
+    aabhog = {"swar": [], "kann_swar": []} if "aabhog" in row_categories else None
+
+    for subgroup_range, subgroup_data in predictions.items():
+        start_row = subgroup_range[0]
+        
+        # Determine which category this subgroup belongs to
+        if "sthayee" in row_categories and start_row > row_categories["sthayee"]:
+            if "antara" in row_categories and start_row > row_categories["antara"]:
+                if "sanchari" in row_categories and start_row > row_categories["sanchari"]:
+                    if "aabhog" in row_categories and start_row > row_categories["aabhog"]:
+                        target = aabhog
+                    else:
+                        target = sanchari if sanchari else antara
+                else:
+                    target = antara
+            else:
+                target = sthayee
+            
+            if target:  # Only add if category exists
+                target["swar"].extend(subgroup_data["swar"])
+                target["kann_swar"].extend(subgroup_data["kann_swar"])
+    
+    return {
+        "sthayee": sthayee,
+        "antara": antara,
+        "sanchari": sanchari,
+        "aabhog": aabhog
+    }

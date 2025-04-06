@@ -3,72 +3,72 @@
         "beat_count": 7,
         "divisions": [3, 2, 2],
         "vibhaag": ["X", "2", "3"],
-        "time_signature": "7/8"  
+        "time_signature": "7/4"  
     },
     "Sultaal": {
         "beat_count": 10,
         "divisions": [2, 2, 2, 2, 2],
         "vibhaag": ["X", "0", "2", "3", "0"],
-        "time_signature": "10/8"  
+        "time_signature": "10/4"  
     },
     "Chautaal": {
         "beat_count": 12,
         "divisions": [2, 2, 2, 2, 2, 2],
         "vibhaag": ["X", "0", "2", "0", "3", "4"],
-        "time_signature": "12/8"  
+        "time_signature": "12/4"  
     },
     "Ada Chautaal": {
         "beat_count": 14,
         "divisions": [2, 2, 2, 2, 2, 2, 2],
         "vibhaag": ["X", "2", "0", "3", "0", "4", "0"],
-        "time_signature": "14/8"  
+        "time_signature": "14/4"  
     },
     "Jhoomra": {
         "beat_count": 14,
         "divisions": [3, 4, 3, 4],
         "vibhaag": ["X", "2", "0", "3"],
-        "time_signature": "14/8"  
+        "time_signature": "14/4"  
     },
     "Dhamaar": {
         "beat_count": 14,
         "divisions": [5, 2, 3, 4],
         "vibhaag": ["X", "2", "0", "3"],
-        "time_signature": "14/8"  
+        "time_signature": "14/4"  
     },
     "Deepchandi": {
         "beat_count": 14,
         "divisions": [3, 4, 3, 4],
         "vibhaag": ["X", "2", "0", "3"],
-        "time_signature": "14/8"  
+        "time_signature": "14/4"  
     },
     "Punjabi (Tilwada)": {
         "beat_count": 16,
         "divisions": [4, 4, 4, 4],
         "vibhaag": ["X", "2", "0", "3"],
-        "time_signature": "16/8"  
+        "time_signature": "16/4"  
     },
     "Dadra": {
         "beat_count": 6,
         "divisions": [3, 3],
         "vibhaag": ["X", "0"],
-        "time_signature": "6/8"  
+        "time_signature": "6/4"  
     },
     "Jhaptal": {
         "beat_count": 10,
         "divisions": [2, 3, 2, 3],
         "vibhaag": ["X", "2", "0", "3"],
-        "time_signature": "10/8"  
+        "time_signature": "10/4"  
     },
     "Ektaal": {
         "beat_count": 12,
         "divisions": [2, 2, 2, 2, 2, 2],
         "vibhaag": ["X", "0", "2", "0", "3", "4"],
-        "time_signature": "12/8"  
+        "time_signature": "12/4"  
     },
     "Teentaal": {
         "beat_count": 16,
         "divisions": [4, 4, 4, 4],
         "vibhaag": ["X", "2", "0", "3"],
-        "time_signature": "16/8"  
+        "time_signature": "16/4"  
     }
 }

@@ -141,8 +141,9 @@ def segment_swar_and_kann_swar(img, subgroup_range, col):
     
     # Save segments
     original_filename = os.path.basename(image_path)
-    upper_part_path = save_segment_swar_and_kann_swar(upper_part_cropped, subgroup_range, col, 'upper', original_filename)
-    lower_part_path = save_segment_swar_and_kann_swar(lower_part_cropped, subgroup_range, col, 'lower', original_filename)
+    
+    upper_part_path = save_segment_swar_and_kann_swar(upper_part_cropped, 'upper', original_filename)
+    lower_part_path = save_segment_swar_and_kann_swar(lower_part_cropped, 'lower', original_filename)
     
     return [lower_part_path], [upper_part_path]  # swar_list, kann_swar_list
 

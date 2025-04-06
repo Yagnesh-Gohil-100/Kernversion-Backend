@@ -1,210 +1,80 @@
 {
-    "26_31": {
+    "subgroup_4_7": {
         "swar_list": [
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
             [
-                "Analysis\\multiple_page\\working_composition_segmented\\0_row28_col1_x82_y637_w28_h15_seg1.png",
-                "Analysis\\multiple_page\\working_composition_segmented\\0_row28_col1_x82_y637_w28_h15_seg2.png"
+                "Analysis\\bilawal_dhamaar_2\\working_composition\\0_row5_col12_x406_y162_w10_h12.png"
             ],
             [
-                "Analysis\\multiple_page\\working_composition\\0_row28_col2_x117_y638_w13_h14.png",
-                "Analysis\\multiple_page\\working_composition\\0_row28_col2_x120_y638_w25_h23.png"
+                "Analysis\\bilawal_dhamaar_2\\working_composition\\0_row5_col13_x439_y162_w10_h14.png"
             ],
             [
-                "Analysis\\multiple_page\\working_composition\\0_row28_col3_x161_y642_w11_h13.png"
-            ],
-            [
-                "Analysis\\multiple_page\\working_composition_segmented\\0_row28_col4_x200_y641_w18_h9_seg1.png",
-                "Analysis\\multiple_page\\working_composition_segmented\\0_row28_col4_x200_y641_w18_h9_seg2.png"
-            ],
-            [
-                "Analysis\\multiple_page\\working_composition\\0_row28_col5_x237_y635_w8_h19.png"
-            ],
-            [
-                "Analysis\\multiple_page\\working_composition\\0_row28_col6_x283_y642_w11_h13.png"
-            ],
-            [
-                "Analysis\\multiple_page\\working_composition\\0_row28_col7_x318_y641_w11_h14.png"
-            ],
-            [
-                "Analysis\\multiple_page\\working_composition\\0_row28_col8_x358_y642_w11_h13.png"
-            ],
-            [
-                "Analysis\\multiple_page\\working_composition\\0_row28_col9_x393_y642_w11_h14.png"
-            ],
-            [
-                "Analysis\\multiple_page\\working_composition\\0_row28_col10_x439_y637_w8_h18.png"
-            ],
-            [
-                "Analysis\\multiple_page\\working_composition\\0_row28_col11_x467_y643_w11_h13.png"
-            ],
-            [
-                "Analysis\\multiple_page\\working_composition\\0_row28_col12_x499_y637_w11_h18.png"
+                "Analysis\\bilawal_dhamaar_2\\working_composition\\0_row5_col14_x472_y166_w9_h5.png"
             ]
         ],
         "kann_swar_list": [
-            [
-                "Analysis\\multiple_page\\working_composition\\0_row27_col1_x80_y624_w8_h9.png",
-                "Analysis\\multiple_page\\working_composition\\0_row27_col1_x94_y624_w9_h9.png"
-            ],
-            [
-                "Analysis\\multiple_page\\working_composition\\0_row27_col2_x112_y621_w10_h11.png"
-            ],
-            [
-                "Analysis\\multiple_page\\working_composition\\0_row27_col3_x159_y624_w7_h9.png"
-            ],
-            [
-                "Analysis\\multiple_page\\working_composition\\0_row27_col4_x197_y624_w7_h9.png"
-            ],
-            [
-                "Analysis\\multiple_page\\working_composition\\0_row27_col5_x236_y625_w10_h9.png"
-            ],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
             [],
             [],
             [],
             [],
             [],
             [
-                "Analysis\\multiple_page\\working_composition\\0_row27_col11_x465_y621_w10_h13.png"
+                "Analysis\\bilawal_dhamaar_2\\working_composition\\0_row4_col12_x400_y145_w7_h10.png"
+            ],
+            [
+                "Analysis\\bilawal_dhamaar_2\\working_composition\\0_row4_col13_x434_y145_w9_h10.png"
             ],
             []
         ],
         "swar_articulation_checks": [
-            true,
-            false,
-            false,
-            true,
-            false,
-            false,
-            false,
-            false,
-            false,
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
             false,
             false,
             false
         ],
         "lyrics_articulation_checks": [
-            true,
-            true,
-            false,
-            true,
-            false,
-            false,
-            false,
-            false,
-            false,
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
             false,
             false,
             false
         ],
         "lyrics_list": [
-            [
-                "Analysis\\multiple_page\\working_composition_segmented\\0_row30_col1_x86_y667_w6_h14_seg1.png"
-            ],
-            [
-                "Analysis\\multiple_page\\working_composition_segmented\\0_row30_col2_x120_y666_w22_h16_seg1.png",
-                "Analysis\\multiple_page\\working_composition_segmented\\0_row30_col2_x120_y666_w22_h16_seg2.png"
-            ],
-            [
-                "Analysis\\multiple_page\\working_composition\\0_row30_col3_x162_y672_w12_h13.png"
-            ],
-            [
-                "Analysis\\multiple_page\\working_composition_segmented\\0_row30_col4_x198_y665_w21_h18_seg1.png",
-                "Analysis\\multiple_page\\working_composition_segmented\\0_row30_col4_x198_y665_w21_h18_seg2.png"
-            ],
-            [
-                "Analysis\\multiple_page\\working_composition\\0_row30_col5_x239_y666_w16_h19.png"
-            ],
-            [
-                "Analysis\\multiple_page\\working_composition\\0_row30_col6_x286_y672_w9_h12.png"
-            ],
-            [
-                "Analysis\\multiple_page\\working_composition\\0_row30_col7_x318_y668_w15_h17.png"
-            ],
-            [
-                "Analysis\\multiple_page\\working_composition\\0_row30_col8_x359_y672_w9_h13.png"
-            ],
-            [
-                "Analysis\\multiple_page\\working_composition\\0_row30_col9_x391_y673_w9_h14.png"
-            ],
-            [
-                "Analysis\\multiple_page\\working_composition\\0_row30_col10_x437_y674_w11_h13.png"
-            ],
-            [
-                "Analysis\\multiple_page\\working_composition\\0_row30_col11_x466_y667_w18_h19.png"
-            ],
-            [
-                "Analysis\\multiple_page\\working_composition\\0_row30_col12_x502_y673_w8_h12.png"
-            ]
-        ],
-        "meend_list": [
-            "",
-            "",
-            "",
-            "",
-            "",
-            "",
-            "",
-            "",
-            "",
-            "",
-            "",
-            ""
-        ]
-    },
-    "33_37": {
-        "swar_list": [
-            [
-                "Analysis\\multiple_page\\working_composition\\0_row34_col1_x85_y728_w9_h13.png"
-            ],
-            [
-                "Analysis\\multiple_page\\working_composition\\0_row34_col2_x135_y722_w8_h17.png"
-            ],
-            [
-                "Analysis\\multiple_page\\working_composition_segmented\\0_row34_col3_x162_y722_w21_h25_seg1.png",
-                "Analysis\\multiple_page\\working_composition_segmented\\0_row34_col3_x162_y722_w21_h25_seg2.png"
-            ],
-            [
-                "Analysis\\multiple_page\\working_composition\\0_row34_col4_x202_y728_w17_h13.png"
-            ],
-            [
-                "Analysis\\multiple_page\\working_composition\\0_row34_col5_x238_y728_w17_h12.png"
-            ],
-            [
-                "Analysis\\multiple_page\\working_composition\\0_row34_col6_x286_y722_w9_h19.png"
-            ],
-            [
-                "Analysis\\multiple_page\\working_composition\\0_row34_col7_x319_y728_w11_h13.png"
-            ],
-            [
-                "Analysis\\multiple_page\\working_composition\\0_row34_col8_x359_y721_w9_h20.png"
-            ],
-            [
-                "Analysis\\multiple_page\\working_composition\\0_row34_col9_x391_y729_w16_h12.png"
-            ],
-            [
-                "Analysis\\multiple_page\\working_composition\\0_row34_col10_x417_y728_w6_h17.png"
-            ],
-            [
-                "Analysis\\multiple_page\\working_composition\\0_row34_col11_x425_y729_w22_h16.png"
-            ],
-            [
-                "Analysis\\multiple_page\\working_composition\\0_row34_col12_x467_y725_w15_h23.png"
-            ],
-            [
-                "Analysis\\multiple_page\\working_composition_segmented\\0_row34_col13_x492_y723_w24_h18_seg1.png",
-                "Analysis\\multiple_page\\working_composition_segmented\\0_row34_col13_x492_y723_w24_h18_seg2.png"
-            ]
-        ],
-        "kann_swar_list": [
-            [],
-            [
-                "Analysis\\multiple_page\\working_composition\\0_row33_col2_x122_y710_w11_h10.png"
-            ],
-            [],
-            [],
-            [
-                "Analysis\\multiple_page\\working_composition\\0_row33_col5_x236_y706_w14_h17.png"
-            ],
             [],
             [],
             [],
@@ -212,74 +82,18 @@
             [],
             [],
             [],
-            []
-        ],
-        "swar_articulation_checks": [
-            false,
-            false,
-            true,
-            false,
-            false,
-            false,
-            false,
-            false,
-            false,
-            false,
-            false,
-            false,
-            true
-        ],
-        "lyrics_articulation_checks": [
-            false,
-            false,
-            true,
-            false,
-            false,
-            false,
-            false,
-            false,
-            false,
-            false,
-            false,
-            true
-        ],
-        "lyrics_list": [
+            [],
+            [],
+            [],
+            [],
             [
-                "Analysis\\multiple_page\\working_composition\\0_row36_col1_x88_y758_w8_h12.png"
+                "Analysis\\bilawal_dhamaar_2\\working_composition\\0_row6_col12_x405_y188_w11_h15.png"
             ],
             [
-                "Analysis\\multiple_page\\working_composition\\0_row36_col2_x127_y758_w17_h13.png"
+                "Analysis\\bilawal_dhamaar_2\\working_composition\\0_row6_col13_x436_y188_w14_h12.png"
             ],
             [
-                "Analysis\\multiple_page\\working_composition_segmented\\0_row36_col3_x164_y757_w18_h20_seg1.png",
-                "Analysis\\multiple_page\\working_composition_segmented\\0_row36_col3_x164_y757_w18_h20_seg2.png"
-            ],
-            [
-                "Analysis\\multiple_page\\working_composition\\0_row36_col4_x209_y752_w10_h20.png"
-            ],
-            [
-                "Analysis\\multiple_page\\working_composition\\0_row36_col5_x240_y758_w13_h12.png"
-            ],
-            [
-                "Analysis\\multiple_page\\working_composition\\0_row36_col6_x281_y754_w14_h18.png"
-            ],
-            [
-                "Analysis\\multiple_page\\working_composition\\0_row36_col7_x319_y759_w12_h16.png"
-            ],
-            [
-                "Analysis\\multiple_page\\working_composition\\0_row36_col8_x354_y759_w14_h12.png"
-            ],
-            [
-                "Analysis\\multiple_page\\working_composition\\0_row36_col9_x391_y759_w15_h13.png"
-            ],
-            [
-                "Analysis\\multiple_page\\working_composition\\0_row36_col11_x431_y759_w8_h12.png"
-            ],
-            [
-                "Analysis\\multiple_page\\working_composition\\0_row36_col12_x468_y754_w16_h19.png"
-            ],
-            [
-                "Analysis\\multiple_page\\working_composition_segmented\\0_row36_col13_x492_y753_w9_h15_seg1.png"
+                "Analysis\\bilawal_dhamaar_2\\working_composition\\0_row6_col14_x473_y187_w8_h12.png"
             ]
         ],
         "meend_list": [
@@ -295,65 +109,76 @@
             "",
             "",
             "",
+            "",
             ""
         ]
     },
-    "39_43": {
+    "subgroup_7_8": {
         "swar_list": [
             [
-                "Analysis\\multiple_page\\working_composition\\1_row41_col1_x83_y111_w17_h17.png"
+                "Analysis\\bilawal_dhamaar_2\\working_composition\\0_row7_col1_x118_y231_w9_h13.png"
             ],
             [
-                "Analysis\\multiple_page\\working_composition\\1_row41_col3_x131_y115_w11_h19.png"
+                "Analysis\\bilawal_dhamaar_2\\working_composition\\0_row7_col2_x139_y236_w9_h4.png"
             ],
             [
-                "Analysis\\multiple_page\\working_composition\\1_row41_col4_x164_y115_w10_h11.png"
+                "Analysis\\bilawal_dhamaar_2\\working_composition\\0_row7_col3_x159_y227_w14_h16.png"
             ],
             [
-                "Analysis\\multiple_page\\working_composition\\1_row41_col5_x205_y120_w11_h4.png"
+                "Analysis\\bilawal_dhamaar_2\\working_composition_segmented\\0_row7_col4_x181_y227_w17_h16_lower.png"
             ],
             [
-                "Analysis\\multiple_page\\working_composition\\1_row41_col6_x243_y114_w9_h13.png"
+                "Analysis\\bilawal_dhamaar_2\\working_composition\\0_row7_col5_x215_y227_w15_h16.png"
             ],
             [
-                "Analysis\\multiple_page\\working_composition\\1_row41_col8_x286_y118_w10_h5.png"
+                "Analysis\\bilawal_dhamaar_2\\working_composition\\0_row7_col6_x240_y235_w10_h5.png"
             ],
             [
-                "Analysis\\multiple_page\\working_composition\\1_row41_col11_x320_y113_w11_h14.png"
+                "Analysis\\bilawal_dhamaar_2\\working_composition\\0_row7_col7_x260_y235_w11_h5.png"
             ],
             [
-                "Analysis\\multiple_page\\working_composition\\1_row41_col12_x364_y113_w9_h14.png"
+                "Analysis\\bilawal_dhamaar_2\\working_composition\\0_row7_col8_x281_y226_w14_h17.png"
             ],
             [
-                "Analysis\\multiple_page\\working_composition\\1_row41_col13_x392_y107_w8_h16.png"
+                "Analysis\\bilawal_dhamaar_2\\working_composition\\0_row7_col9_x304_y226_w14_h16.png"
             ],
             [
-                "Analysis\\multiple_page\\working_composition\\1_row41_col14_x434_y108_w16_h24.png"
+                "Analysis\\bilawal_dhamaar_2\\working_composition\\0_row7_col10_x339_y227_w15_h15.png"
             ],
             [
-                "Analysis\\multiple_page\\working_composition\\1_row41_col15_x468_y107_w7_h16.png"
+                "Analysis\\bilawal_dhamaar_2\\working_composition\\0_row7_col11_x376_y235_w9_h4.png"
             ],
             [
-                "Analysis\\multiple_page\\working_composition\\1_row41_col16_x498_y112_w17_h13.png"
+                "Analysis\\bilawal_dhamaar_2\\working_composition\\0_row7_col12_x405_y225_w7_h17.png"
+            ],
+            [
+                "Analysis\\bilawal_dhamaar_2\\working_composition\\0_row7_col13_x434_y226_w15_h15.png"
+            ],
+            [
+                "Analysis\\bilawal_dhamaar_2\\working_composition\\0_row7_col14_x470_y234_w10_h4.png"
             ]
         ],
         "kann_swar_list": [
+            [],
+            [],
             [
-                "Analysis\\multiple_page\\working_composition\\1_row40_col1_x83_y97_w10_h10.png"
+                "Analysis\\bilawal_dhamaar_2\\working_composition\\0_row7_col3_x156_y211_w14_h12.png"
+            ],
+            [
+                "Analysis\\bilawal_dhamaar_2\\working_composition_segmented\\0_row7_col4_x181_y214_w17_h9_upper.png"
             ],
             [],
             [],
             [],
             [],
-            [],
             [
-                "Analysis\\multiple_page\\working_composition\\1_row40_col10_x314_y95_w8_h10.png"
+                "Analysis\\bilawal_dhamaar_2\\working_composition\\0_row7_col9_x303_y213_w8_h8.png"
             ],
             [],
-            [
-                "Analysis\\multiple_page\\working_composition\\1_row40_col13_x391_y95_w10_h8.png"
-            ],
             [],
+            [
+                "Analysis\\bilawal_dhamaar_2\\working_composition\\0_row7_col12_x401_y211_w13_h10.png"
+            ],
             [],
             []
         ],
@@ -369,9 +194,13 @@
             false,
             false,
             false,
+            false,
+            false,
             false
         ],
         "lyrics_articulation_checks": [
+            false,
+            false,
             false,
             false,
             false,
@@ -387,40 +216,46 @@
         ],
         "lyrics_list": [
             [
-                "Analysis\\multiple_page\\working_composition\\1_row43_col1_x85_y147_w14_h14.png"
+                "Analysis\\bilawal_dhamaar_2\\working_composition\\0_row8_col1_x118_y256_w12_h17.png"
             ],
             [
-                "Analysis\\multiple_page\\working_composition\\1_row43_col3_x133_y147_w9_h12.png"
+                "Analysis\\bilawal_dhamaar_2\\working_composition\\0_row8_col2_x141_y260_w8_h12.png"
             ],
             [
-                "Analysis\\multiple_page\\working_composition\\1_row43_col4_x164_y139_w8_h18.png"
+                "Analysis\\bilawal_dhamaar_2\\working_composition\\0_row8_col3_x163_y260_w9_h13.png"
             ],
             [
-                "Analysis\\multiple_page\\working_composition\\1_row43_col5_x207_y146_w8_h13.png"
+                "Analysis\\bilawal_dhamaar_2\\working_composition\\0_row8_col4_x184_y260_w11_h12.png"
             ],
             [
-                "Analysis\\multiple_page\\working_composition\\1_row43_col6_x243_y145_w18_h13.png"
+                "Analysis\\bilawal_dhamaar_2\\working_composition\\0_row8_col5_x215_y259_w13_h12.png"
             ],
             [
-                "Analysis\\multiple_page\\working_composition\\1_row43_col8_x288_y145_w9_h12.png"
+                "Analysis\\bilawal_dhamaar_2\\working_composition\\0_row8_col6_x242_y259_w8_h12.png"
             ],
             [
-                "Analysis\\multiple_page\\working_composition\\1_row43_col11_x320_y145_w9_h13.png"
+                "Analysis\\bilawal_dhamaar_2\\working_composition\\0_row8_col7_x263_y259_w8_h12.png"
             ],
             [
-                "Analysis\\multiple_page\\working_composition\\1_row43_col12_x365_y144_w8_h13.png"
+                "Analysis\\bilawal_dhamaar_2\\working_composition\\0_row8_col8_x285_y258_w10_h13.png"
             ],
             [
-                "Analysis\\multiple_page\\working_composition\\1_row43_col13_x393_y144_w8_h13.png"
+                "Analysis\\bilawal_dhamaar_2\\working_composition\\0_row8_col9_x310_y259_w9_h12.png"
             ],
             [
-                "Analysis\\multiple_page\\working_composition\\1_row43_col14_x441_y144_w9_h12.png"
+                "Analysis\\bilawal_dhamaar_2\\working_composition\\0_row8_col10_x339_y252_w14_h19.png"
             ],
             [
-                "Analysis\\multiple_page\\working_composition\\1_row43_col15_x469_y144_w8_h12.png"
+                "Analysis\\bilawal_dhamaar_2\\working_composition\\0_row8_col11_x375_y258_w8_h12.png"
             ],
             [
-                "Analysis\\multiple_page\\working_composition\\1_row43_col16_x503_y144_w11_h13.png"
+                "Analysis\\bilawal_dhamaar_2\\working_composition\\0_row8_col12_x406_y258_w8_h14.png"
+            ],
+            [
+                "Analysis\\bilawal_dhamaar_2\\working_composition\\0_row8_col13_x441_y258_w10_h13.png"
+            ],
+            [
+                "Analysis\\bilawal_dhamaar_2\\working_composition\\0_row8_col14_x473_y257_w7_h13.png"
             ]
         ],
         "meend_list": [
@@ -435,239 +270,107 @@
             "",
             "",
             "",
+            "",
+            "",
             ""
         ]
     },
-    "47_51": {
+    "subgroup_10_14": {
         "swar_list": [
             [
-                "Analysis\\multiple_page\\working_composition\\1_row48_col1_x84_y302_w10_h13.png"
+                "Analysis\\bilawal_dhamaar_2\\working_composition\\0_row11_col1_x117_y314_w10_h12.png"
             ],
             [
-                "Analysis\\multiple_page\\working_composition\\1_row48_col2_x130_y301_w11_h13.png"
+                "Analysis\\bilawal_dhamaar_2\\working_composition_segmented\\0_row11_col2_x137_y309_w22_h23_seg1.png",
+                "Analysis\\bilawal_dhamaar_2\\working_composition_segmented\\0_row11_col2_x137_y309_w22_h23_seg2.png"
             ],
             [
-                "Analysis\\multiple_page\\working_composition\\1_row48_col3_x164_y301_w10_h13.png"
+                "Analysis\\bilawal_dhamaar_2\\working_composition\\0_row11_col3_x169_y313_w8_h13.png"
             ],
             [
-                "Analysis\\multiple_page\\working_composition_segmented\\1_row48_col4_x201_y299_w18_h10_seg1.png",
-                "Analysis\\multiple_page\\working_composition_segmented\\1_row48_col4_x201_y299_w18_h10_seg2.png"
+                "Analysis\\bilawal_dhamaar_2\\working_composition\\0_row11_col4_x189_y318_w9_h4.png"
             ],
             [
-                "Analysis\\multiple_page\\working_composition\\1_row48_col5_x239_y296_w17_h16.png"
+                "Analysis\\bilawal_dhamaar_2\\working_composition\\0_row11_col5_x215_y312_w10_h13.png"
             ],
             [
-                "Analysis\\multiple_page\\working_composition\\1_row48_col6_x286_y305_w10_h4.png"
+                "Analysis\\bilawal_dhamaar_2\\working_composition\\0_row11_col6_x235_y313_w10_h12.png"
             ],
             [
-                "Analysis\\multiple_page\\working_composition\\1_row48_col7_x317_y296_w17_h16.png"
+                "Analysis\\bilawal_dhamaar_2\\working_composition_segmented\\0_row11_col7_x255_y307_w15_h14_seg1.png",
+                "Analysis\\bilawal_dhamaar_2\\working_composition_segmented\\0_row11_col7_x255_y307_w15_h14_seg2.png"
             ],
             [
-                "Analysis\\multiple_page\\working_composition\\1_row48_col8_x359_y295_w16_h16.png"
+                "Analysis\\bilawal_dhamaar_2\\working_composition\\0_row11_col8_x285_y312_w10_h13.png"
             ],
             [
-                "Analysis\\multiple_page\\working_composition\\1_row48_col9_x394_y304_w9_h4.png"
+                "Analysis\\bilawal_dhamaar_2\\working_composition\\0_row11_col9_x309_y312_w9_h12.png"
             ],
             [
-                "Analysis\\multiple_page\\working_composition\\1_row48_col10_x433_y295_w17_h16.png"
+                "Analysis\\bilawal_dhamaar_2\\working_composition\\0_row11_col10_x338_y312_w9_h12.png"
             ],
             [
-                "Analysis\\multiple_page\\working_composition\\1_row48_col11_x468_y295_w16_h17.png"
+                "Analysis\\bilawal_dhamaar_2\\working_composition_segmented\\0_row11_col11_x367_y311_w18_h9_seg1.png",
+                "Analysis\\bilawal_dhamaar_2\\working_composition_segmented\\0_row11_col11_x367_y311_w18_h9_seg2.png"
             ],
             [
-                "Analysis\\multiple_page\\working_composition\\1_row48_col13_x499_y294_w17_h18.png"
+                "Analysis\\bilawal_dhamaar_2\\working_composition\\0_row11_col12_x405_y312_w10_h13.png"
+            ],
+            [
+                "Analysis\\bilawal_dhamaar_2\\working_composition\\0_row11_col13_x437_y305_w8_h19.png"
+            ],
+            [
+                "Analysis\\bilawal_dhamaar_2\\working_composition\\0_row11_col14_x471_y316_w10_h4.png"
             ]
         ],
         "kann_swar_list": [
             [
-                "Analysis\\multiple_page\\working_composition\\1_row47_col1_x83_y281_w9_h12.png"
-            ],
-            [],
-            [
-                "Analysis\\multiple_page\\working_composition\\1_row47_col3_x158_y280_w10_h13.png"
+                "Analysis\\bilawal_dhamaar_2\\working_composition\\0_row10_col1_x116_y294_w14_h13.png"
             ],
             [],
             [],
             [],
-            [],
-            [],
-            [],
-            [],
             [
-                "Analysis\\multiple_page\\working_composition\\1_row47_col11_x467_y275_w14_h15.png"
+                "Analysis\\bilawal_dhamaar_2\\working_composition\\0_row10_col5_x213_y296_w6_h9.png"
             ],
             [
-                "Analysis\\multiple_page\\working_composition\\1_row47_col12_x491_y275_w14_h16.png"
-            ]
+                "Analysis\\bilawal_dhamaar_2\\working_composition\\0_row10_col6_x232_y296_w7_h9.png"
+            ],
+            [],
+            [
+                "Analysis\\bilawal_dhamaar_2\\working_composition\\0_row10_col8_x278_y295_w9_h9.png"
+            ],
+            [],
+            [],
+            [],
+            [],
+            [],
+            []
         ],
         "swar_articulation_checks": [
             false,
+            true,
+            false,
+            false,
             false,
             false,
             true,
             false,
             false,
             false,
-            false,
-            false,
+            true,
             false,
             false,
             false
         ],
         "lyrics_articulation_checks": [
             false,
-            false,
-            false,
             true,
             false,
             false,
             false,
             false,
-            false,
-            false,
-            false,
-            false
-        ],
-        "lyrics_list": [
-            [
-                "Analysis\\multiple_page\\working_composition\\1_row50_col1_x85_y333_w11_h16.png"
-            ],
-            [
-                "Analysis\\multiple_page\\working_composition\\1_row50_col2_x133_y332_w9_h13.png"
-            ],
-            [
-                "Analysis\\multiple_page\\working_composition\\1_row50_col3_x161_y332_w14_h13.png"
-            ],
-            [
-                "Analysis\\multiple_page\\working_composition_segmented\\1_row50_col4_x205_y330_w15_h12_seg1.png",
-                "Analysis\\multiple_page\\working_composition_segmented\\1_row50_col4_x205_y330_w15_h12_seg2.png"
-            ],
-            [
-                "Analysis\\multiple_page\\working_composition\\1_row50_col5_x240_y332_w13_h13.png"
-            ],
-            [
-                "Analysis\\multiple_page\\working_composition\\1_row50_col6_x290_y331_w7_h13.png"
-            ],
-            [
-                "Analysis\\multiple_page\\working_composition\\1_row50_col7_x317_y331_w12_h13.png"
-            ],
-            [
-                "Analysis\\multiple_page\\working_composition\\1_row50_col8_x359_y331_w15_h13.png"
-            ],
-            [
-                "Analysis\\multiple_page\\working_composition\\1_row50_col9_x396_y330_w8_h13.png"
-            ],
-            [
-                "Analysis\\multiple_page\\working_composition\\1_row50_col10_x437_y330_w10_h16.png"
-            ],
-            [
-                "Analysis\\multiple_page\\working_composition\\1_row50_col11_x468_y330_w9_h13.png"
-            ],
-            [
-                "Analysis\\multiple_page\\working_composition\\1_row50_col13_x499_y325_w15_h18.png"
-            ]
-        ],
-        "meend_list": [
-            "",
-            "",
-            "",
-            "",
-            "",
-            "",
-            "",
-            "",
-            "",
-            "",
-            "",
-            ""
-        ]
-    },
-    "53_57": {
-        "swar_list": [
-            [
-                "Analysis\\multiple_page\\working_composition\\1_row54_col1_x84_y385_w8_h18.png"
-            ],
-            [
-                "Analysis\\multiple_page\\working_composition\\1_row54_col2_x135_y385_w8_h18.png"
-            ],
-            [
-                "Analysis\\multiple_page\\working_composition\\1_row54_col3_x162_y386_w17_h17.png"
-            ],
-            [
-                "Analysis\\multiple_page\\working_composition_segmented\\1_row54_col4_x193_y384_w15_h15_seg1.png"
-            ],
-            [
-                "Analysis\\multiple_page\\working_composition\\1_row54_col5_x211_y388_w8_h10.png"
-            ],
-            [
-                "Analysis\\multiple_page\\working_composition\\1_row54_col6_x240_y384_w15_h18.png"
-            ],
-            [
-                "Analysis\\multiple_page\\working_composition\\1_row54_col7_x287_y394_w10_h4.png"
-            ],
-            [
-                "Analysis\\multiple_page\\working_composition\\1_row54_col8_x317_y388_w12_h14.png"
-            ],
-            [
-                "Analysis\\multiple_page\\working_composition\\1_row54_col9_x366_y388_w9_h14.png"
-            ],
-            [
-                "Analysis\\multiple_page\\working_composition\\1_row54_col10_x394_y389_w9_h13.png"
-            ],
-            [
-                "Analysis\\multiple_page\\working_composition_segmented\\1_row54_col11_x433_y387_w18_h9_seg1.png",
-                "Analysis\\multiple_page\\working_composition_segmented\\1_row54_col11_x433_y387_w18_h9_seg2.png"
-            ],
-            [
-                "Analysis\\multiple_page\\working_composition\\1_row54_col13_x471_y394_w8_h4.png"
-            ],
-            [
-                "Analysis\\multiple_page\\working_composition\\1_row54_col15_x506_y388_w9_h13.png"
-            ]
-        ],
-        "kann_swar_list": [
-            [
-                "Analysis\\multiple_page\\working_composition\\1_row53_col1_x81_y367_w14_h15.png"
-            ],
-            [],
-            [],
-            [],
-            [],
-            [],
-            [],
-            [],
-            [],
-            [
-                "Analysis\\multiple_page\\working_composition\\1_row53_col10_x393_y368_w9_h12.png"
-            ],
-            [],
-            [],
-            [
-                "Analysis\\multiple_page\\working_composition\\1_row53_col14_x495_y366_w9_h14.png"
-            ]
-        ],
-        "swar_articulation_checks": [
-            false,
-            false,
-            false,
             true,
-            false,
-            false,
-            false,
-            false,
-            false,
-            false,
-            true,
-            false,
-            false
-        ],
-        "lyrics_articulation_checks": [
-            false,
-            false,
-            false,
-            true,
-            false,
-            false,
             false,
             false,
             false,
@@ -678,44 +381,48 @@
         ],
         "lyrics_list": [
             [
-                "Analysis\\multiple_page\\working_composition\\1_row56_col1_x86_y421_w8_h12.png"
+                "Analysis\\bilawal_dhamaar_2\\working_composition\\0_row13_col1_x117_y343_w11_h14.png"
             ],
             [
-                "Analysis\\multiple_page\\working_composition\\1_row56_col2_x133_y422_w10_h12.png"
+                "Analysis\\bilawal_dhamaar_2\\working_composition_segmented\\0_row13_col2_x137_y337_w20_h15_seg1.png",
+                "Analysis\\bilawal_dhamaar_2\\working_composition_segmented\\0_row13_col2_x137_y337_w20_h15_seg2.png"
             ],
             [
-                "Analysis\\multiple_page\\working_composition\\1_row56_col3_x162_y421_w10_h13.png"
+                "Analysis\\bilawal_dhamaar_2\\working_composition\\0_row13_col3_x165_y342_w15_h14.png"
             ],
             [
-                "Analysis\\multiple_page\\working_composition_segmented\\1_row56_col4_x198_y420_w18_h20_seg1.png",
-                "Analysis\\multiple_page\\working_composition_segmented\\1_row56_col4_x198_y420_w18_h20_seg2.png"
+                "Analysis\\bilawal_dhamaar_2\\working_composition\\0_row13_col4_x190_y342_w8_h12.png"
             ],
             [
-                "Analysis\\multiple_page\\working_composition\\1_row56_col6_x240_y421_w15_h13.png"
+                "Analysis\\bilawal_dhamaar_2\\working_composition\\0_row13_col5_x215_y342_w10_h11.png"
             ],
             [
-                "Analysis\\multiple_page\\working_composition\\1_row56_col7_x289_y421_w8_h12.png"
+                "Analysis\\bilawal_dhamaar_2\\working_composition\\0_row13_col6_x234_y342_w9_h12.png"
             ],
             [
-                "Analysis\\multiple_page\\working_composition\\1_row56_col8_x319_y419_w8_h13.png"
+                "Analysis\\bilawal_dhamaar_2\\working_composition_segmented\\0_row13_col7_x256_y341_w13_h10_seg1.png"
             ],
             [
-                "Analysis\\multiple_page\\working_composition\\1_row56_col9_x364_y420_w11_h12.png"
+                "Analysis\\bilawal_dhamaar_2\\working_composition\\0_row13_col8_x282_y342_w15_h11.png"
             ],
             [
-                "Analysis\\multiple_page\\working_composition\\1_row56_col10_x394_y420_w9_h12.png"
+                "Analysis\\bilawal_dhamaar_2\\working_composition\\0_row13_col9_x311_y341_w7_h12.png"
             ],
             [
-                "Analysis\\multiple_page\\working_composition_segmented\\1_row56_col11_x435_y418_w7_h11_seg1.png"
+                "Analysis\\bilawal_dhamaar_2\\working_composition\\0_row13_col10_x338_y342_w11_h11.png"
             ],
             [
-                "Analysis\\multiple_page\\working_composition\\1_row56_col12_x446_y418_w6_h11.png"
+                "Analysis\\bilawal_dhamaar_2\\working_composition_segmented\\0_row13_col11_x367_y340_w15_h19_seg1.png",
+                "Analysis\\bilawal_dhamaar_2\\working_composition_segmented\\0_row13_col11_x367_y340_w15_h19_seg2.png"
             ],
             [
-                "Analysis\\multiple_page\\working_composition\\1_row56_col13_x469_y419_w8_h13.png"
+                "Analysis\\bilawal_dhamaar_2\\working_composition\\0_row13_col12_x405_y341_w9_h13.png"
             ],
             [
-                "Analysis\\multiple_page\\working_composition\\1_row56_col15_x505_y413_w12_h20.png"
+                "Analysis\\bilawal_dhamaar_2\\working_composition\\0_row13_col13_x436_y341_w9_h12.png"
+            ],
+            [
+                "Analysis\\bilawal_dhamaar_2\\working_composition\\0_row13_col14_x473_y340_w7_h12.png"
             ]
         ],
         "meend_list": [
@@ -731,68 +438,78 @@
             "",
             "",
             "",
+            "",
             ""
         ]
     },
-    "59_64": {
+    "subgroup_16_19": {
         "swar_list": [
             [
-                "Analysis\\multiple_page\\working_composition\\1_row60_col1_x86_y484_w10_h4.png"
+                "Analysis\\bilawal_dhamaar_2\\working_composition\\0_row18_col1_x116_y395_w15_h12.png"
             ],
             [
-                "Analysis\\multiple_page\\working_composition\\1_row60_col2_x133_y479_w10_h13.png"
+                "Analysis\\bilawal_dhamaar_2\\working_composition\\0_row18_col2_x142_y400_w10_h4.png"
             ],
             [
-                "Analysis\\multiple_page\\working_composition\\1_row60_col3_x164_y479_w11_h13.png"
+                "Analysis\\bilawal_dhamaar_2\\working_composition\\0_row18_col3_x162_y400_w11_h4.png"
             ],
             [
-                "Analysis\\multiple_page\\working_composition\\1_row60_col4_x210_y483_w11_h4.png"
+                "Analysis\\bilawal_dhamaar_2\\working_composition\\0_row18_col4_x183_y395_w15_h12.png"
             ],
             [
-                "Analysis\\multiple_page\\working_composition\\1_row60_col5_x240_y474_w17_h17.png"
+                "Analysis\\bilawal_dhamaar_2\\working_composition\\0_row18_col5_x215_y392_w14_h15.png"
             ],
             [
-                "Analysis\\multiple_page\\working_composition\\1_row60_col6_x281_y478_w12_h14.png"
+                "Analysis\\bilawal_dhamaar_2\\working_composition\\0_row18_col7_x239_y391_w15_h16.png"
             ],
             [
-                "Analysis\\multiple_page\\working_composition\\1_row60_col7_x317_y477_w9_h13.png"
+                "Analysis\\bilawal_dhamaar_2\\working_composition\\0_row18_col8_x263_y399_w10_h5.png"
             ],
             [
-                "Analysis\\multiple_page\\working_composition\\1_row60_col8_x363_y482_w11_h4.png"
+                "Analysis\\bilawal_dhamaar_2\\working_composition\\0_row18_col10_x284_y395_w10_h12.png"
             ],
             [
-                "Analysis\\multiple_page\\working_composition\\1_row60_col9_x394_y478_w10_h13.png"
+                "Analysis\\bilawal_dhamaar_2\\working_composition\\0_row18_col11_x308_y399_w9_h5.png"
             ],
             [
-                "Analysis\\multiple_page\\working_composition_segmented\\1_row60_col10_x429_y471_w24_h16_seg1.png",
-                "Analysis\\multiple_page\\working_composition_segmented\\1_row60_col10_x429_y471_w24_h16_seg2.png"
+                "Analysis\\bilawal_dhamaar_2\\working_composition\\0_row18_col12_x338_y391_w13_h19.png"
             ],
             [
-                "Analysis\\multiple_page\\working_composition\\1_row60_col11_x469_y483_w10_h4.png"
+                "Analysis\\bilawal_dhamaar_2\\working_composition\\0_row18_col13_x372_y394_w9_h13.png"
             ],
             [
-                "Analysis\\multiple_page\\working_composition\\1_row60_col12_x499_y474_w17_h16.png"
+                "Analysis\\bilawal_dhamaar_2\\working_composition\\0_row18_col14_x404_y394_w10_h13.png"
+            ],
+            [
+                "Analysis\\bilawal_dhamaar_2\\working_composition\\0_row18_col15_x437_y394_w10_h13.png"
+            ],
+            [
+                "Analysis\\bilawal_dhamaar_2\\working_composition\\0_row18_col17_x468_y399_w12_h4.png"
             ]
         ],
         "kann_swar_list": [
             [],
             [],
-            [
-                "Analysis\\multiple_page\\working_composition\\1_row59_col3_x160_y456_w13_h14.png"
-            ],
-            [],
-            [],
-            [],
             [],
             [],
             [
-                "Analysis\\multiple_page\\working_composition\\1_row59_col9_x393_y456_w10_h13.png"
+                "Analysis\\bilawal_dhamaar_2\\working_composition\\0_row16_col5_x213_y374_w12_h14.png"
             ],
             [],
             [],
             [
-                "Analysis\\multiple_page\\working_composition\\1_row59_col12_x497_y459_w9_h10.png"
-            ]
+                "Analysis\\bilawal_dhamaar_2\\working_composition\\0_row16_col9_x273_y376_w14_h12.png"
+            ],
+            [],
+            [],
+            [],
+            [
+                "Analysis\\bilawal_dhamaar_2\\working_composition\\0_row16_col14_x399_y377_w6_h10.png"
+            ],
+            [
+                "Analysis\\bilawal_dhamaar_2\\working_composition\\0_row16_col15_x438_y377_w9_h10.png"
+            ],
+            []
         ],
         "swar_articulation_checks": [
             false,
@@ -804,7 +521,9 @@
             false,
             false,
             false,
-            true,
+            false,
+            false,
+            false,
             false,
             false
         ],
@@ -820,44 +539,56 @@
             false,
             false,
             false,
+            false,
+            false,
+            false,
             false
         ],
         "lyrics_list": [
             [
-                "Analysis\\multiple_page\\working_composition\\1_row62_col1_x85_y510_w8_h13.png"
+                "Analysis\\bilawal_dhamaar_2\\working_composition\\0_row19_col1_x115_y418_w15_h18.png"
             ],
             [
-                "Analysis\\multiple_page\\working_composition\\1_row62_col2_x133_y511_w10_h13.png"
+                "Analysis\\bilawal_dhamaar_2\\working_composition\\0_row19_col2_x141_y423_w7_h13.png"
             ],
             [
-                "Analysis\\multiple_page\\working_composition\\1_row62_col3_x163_y505_w10_h23.png"
+                "Analysis\\bilawal_dhamaar_2\\working_composition\\0_row19_col3_x165_y423_w8_h13.png"
             ],
             [
-                "Analysis\\multiple_page\\working_composition\\1_row62_col4_x212_y510_w9_h12.png"
+                "Analysis\\bilawal_dhamaar_2\\working_composition\\0_row19_col4_x183_y424_w11_h11.png"
             ],
             [
-                "Analysis\\multiple_page\\working_composition\\1_row62_col5_x240_y509_w9_h13.png"
+                "Analysis\\bilawal_dhamaar_2\\working_composition\\0_row19_col5_x214_y420_w9_h16.png"
             ],
             [
-                "Analysis\\multiple_page\\working_composition\\1_row62_col6_x283_y509_w11_h13.png"
+                "Analysis\\bilawal_dhamaar_2\\working_composition\\0_row19_col7_x237_y423_w8_h12.png"
             ],
             [
-                "Analysis\\multiple_page\\working_composition\\1_row62_col7_x317_y503_w15_h18.png"
+                "Analysis\\bilawal_dhamaar_2\\working_composition\\0_row19_col8_x263_y423_w7_h12.png"
             ],
             [
-                "Analysis\\multiple_page\\working_composition\\1_row62_col8_x367_y509_w8_h13.png"
+                "Analysis\\bilawal_dhamaar_2\\working_composition\\0_row19_col10_x288_y424_w9_h14.png"
             ],
             [
-                "Analysis\\multiple_page\\working_composition\\1_row62_col9_x394_y509_w19_h12.png"
+                "Analysis\\bilawal_dhamaar_2\\working_composition\\0_row19_col11_x310_y423_w8_h12.png"
             ],
             [
-                "Analysis\\multiple_page\\working_composition\\1_row62_col10_x437_y508_w15_h11.png"
+                "Analysis\\bilawal_dhamaar_2\\working_composition\\0_row19_col12_x338_y423_w7_h12.png"
             ],
             [
-                "Analysis\\multiple_page\\working_composition\\1_row62_col11_x469_y509_w7_h12.png"
+                "Analysis\\bilawal_dhamaar_2\\working_composition\\0_row19_col13_x367_y424_w13_h11.png"
             ],
             [
-                "Analysis\\multiple_page\\working_composition\\1_row62_col12_x502_y509_w8_h13.png"
+                "Analysis\\bilawal_dhamaar_2\\working_composition\\0_row19_col14_x402_y417_w13_h22.png"
+            ],
+            [
+                "Analysis\\bilawal_dhamaar_2\\working_composition\\0_row19_col15_x432_y423_w13_h13.png"
+            ],
+            [
+                "Analysis\\bilawal_dhamaar_2\\working_composition\\0_row19_col16_x463_y423_w8_h13.png"
+            ],
+            [
+                "Analysis\\bilawal_dhamaar_2\\working_composition\\0_row19_col18_x478_y423_w5_h14.png"
             ]
         ],
         "meend_list": [
@@ -872,65 +603,77 @@
             "",
             "",
             "",
+            "",
+            "",
             ""
         ]
     },
-    "66_70": {
+    "subgroup_22_24": {
         "swar_list": [
             [
-                "Analysis\\multiple_page\\working_composition\\1_row67_col1_x85_y573_w11_h4.png"
+                "Analysis\\bilawal_dhamaar_2\\working_composition\\0_row23_col1_x115_y495_w14_h15.png"
             ],
             [
-                "Analysis\\multiple_page\\working_composition\\1_row67_col2_x127_y563_w15_h18.png"
+                "Analysis\\bilawal_dhamaar_2\\working_composition\\0_row23_col2_x137_y502_w10_h5.png"
             ],
             [
-                "Analysis\\multiple_page\\working_composition\\1_row67_col3_x162_y568_w16_h16.png"
+                "Analysis\\bilawal_dhamaar_2\\working_composition\\0_row23_col4_x158_y502_w10_h5.png"
             ],
             [
-                "Analysis\\multiple_page\\working_composition\\1_row67_col4_x180_y568_w6_h16.png"
+                "Analysis\\bilawal_dhamaar_2\\working_composition\\0_row23_col6_x179_y494_w14_h16.png"
             ],
             [
-                "Analysis\\multiple_page\\working_composition_segmented\\1_row67_col5_x201_y566_w18_h10_seg1.png"
+                "Analysis\\bilawal_dhamaar_2\\working_composition\\0_row23_col8_x204_y493_w14_h17.png"
             ],
             [
-                "Analysis\\multiple_page\\working_composition\\1_row67_col7_x239_y568_w10_h13.png"
+                "Analysis\\bilawal_dhamaar_2\\working_composition\\0_row23_col9_x239_y494_w15_h16.png"
             ],
             [
-                "Analysis\\multiple_page\\working_composition\\1_row67_col8_x287_y572_w11_h4.png"
+                "Analysis\\bilawal_dhamaar_2\\working_composition\\0_row23_col10_x275_y502_w9_h5.png"
             ],
             [
-                "Analysis\\multiple_page\\working_composition\\1_row67_col9_x317_y562_w8_h19.png"
+                "Analysis\\bilawal_dhamaar_2\\working_composition\\0_row23_col11_x306_y493_w15_h17.png"
             ],
             [
-                "Analysis\\multiple_page\\working_composition\\1_row67_col10_x363_y567_w11_h14.png"
+                "Analysis\\bilawal_dhamaar_2\\working_composition\\0_row23_col12_x336_y503_w9_h4.png"
             ],
             [
-                "Analysis\\multiple_page\\working_composition\\1_row67_col11_x393_y561_w8_h17.png"
+                "Analysis\\bilawal_dhamaar_2\\working_composition\\0_row23_col13_x364_y494_w15_h16.png"
             ],
             [
-                "Analysis\\multiple_page\\working_composition\\1_row67_col12_x437_y563_w15_h25.png"
+                "Analysis\\bilawal_dhamaar_2\\working_composition\\0_row23_col14_x403_y494_w15_h16.png"
             ],
             [
-                "Analysis\\multiple_page\\working_composition\\1_row67_col13_x469_y561_w7_h20.png"
+                "Analysis\\bilawal_dhamaar_2\\working_composition\\0_row23_col15_x424_y493_w8_h18.png"
             ],
             [
-                "Analysis\\multiple_page\\working_composition\\1_row67_col14_x498_y567_w17_h13.png"
+                "Analysis\\bilawal_dhamaar_2\\working_composition\\0_row23_col16_x442_y493_w15_h17.png"
+            ],
+            [
+                "Analysis\\bilawal_dhamaar_2\\working_composition\\0_row23_col17_x467_y502_w12_h4.png"
             ]
         ],
         "kann_swar_list": [
+            [
+                "Analysis\\bilawal_dhamaar_2\\working_composition\\0_row22_col1_x114_y477_w12_h14.png"
+            ],
             [],
             [],
-            [],
-            [],
-            [],
+            [
+                "Analysis\\bilawal_dhamaar_2\\working_composition\\0_row22_col6_x173_y478_w13_h12.png"
+            ],
+            [
+                "Analysis\\bilawal_dhamaar_2\\working_composition\\0_row22_col7_x194_y481_w9_h10.png"
+            ],
             [],
             [],
             [],
             [],
             [],
             [
-                "Analysis\\multiple_page\\working_composition\\1_row66_col12_x434_y544_w7_h14.png"
+                "Analysis\\bilawal_dhamaar_2\\working_composition\\0_row22_col14_x397_y477_w12_h13.png"
             ],
+            [],
             [],
             []
         ],
@@ -939,7 +682,8 @@
             false,
             false,
             false,
-            true,
+            false,
+            false,
             false,
             false,
             false,
@@ -953,7 +697,7 @@
             false,
             false,
             false,
-            true,
+            false,
             false,
             false,
             false,
@@ -967,46 +711,46 @@
         ],
         "lyrics_list": [
             [
-                "Analysis\\multiple_page\\working_composition\\1_row69_col1_x85_y599_w8_h12.png"
+                "Analysis\\bilawal_dhamaar_2\\working_composition\\0_row24_col1_x115_y527_w13_h12.png"
             ],
             [
-                "Analysis\\multiple_page\\working_composition\\1_row69_col2_x129_y593_w13_h19.png"
+                "Analysis\\bilawal_dhamaar_2\\working_composition\\0_row24_col3_x143_y526_w8_h13.png"
             ],
             [
-                "Analysis\\multiple_page\\working_composition\\1_row69_col3_x161_y594_w16_h19.png"
+                "Analysis\\bilawal_dhamaar_2\\working_composition\\0_row24_col5_x164_y526_w8_h13.png"
             ],
             [
-                "Analysis\\multiple_page\\working_composition_segmented\\1_row69_col5_x201_y598_w11_h9_seg1.png"
+                "Analysis\\bilawal_dhamaar_2\\working_composition\\0_row24_col6_x185_y527_w10_h12.png"
             ],
             [
-                "Analysis\\multiple_page\\working_composition\\1_row69_col6_x216_y597_w6_h11.png"
+                "Analysis\\bilawal_dhamaar_2\\working_composition\\0_row24_col8_x209_y527_w9_h13.png"
             ],
             [
-                "Analysis\\multiple_page\\working_composition\\1_row69_col7_x238_y599_w18_h13.png"
+                "Analysis\\bilawal_dhamaar_2\\working_composition\\0_row24_col9_x238_y527_w14_h12.png"
             ],
             [
-                "Analysis\\multiple_page\\working_composition\\1_row69_col8_x289_y599_w8_h13.png"
+                "Analysis\\bilawal_dhamaar_2\\working_composition\\0_row24_col10_x274_y526_w8_h13.png"
             ],
             [
-                "Analysis\\multiple_page\\working_composition\\1_row69_col9_x317_y599_w8_h12.png"
+                "Analysis\\bilawal_dhamaar_2\\working_composition\\0_row24_col11_x304_y527_w12_h12.png"
             ],
             [
-                "Analysis\\multiple_page\\working_composition\\1_row69_col10_x365_y599_w8_h13.png"
+                "Analysis\\bilawal_dhamaar_2\\working_composition\\0_row24_col12_x337_y527_w8_h11.png"
             ],
             [
-                "Analysis\\multiple_page\\working_composition\\1_row69_col11_x394_y598_w8_h13.png"
+                "Analysis\\bilawal_dhamaar_2\\working_composition\\0_row24_col13_x369_y527_w11_h15.png"
             ],
             [
-                "Analysis\\multiple_page\\working_composition\\1_row69_col12_x439_y598_w8_h13.png"
+                "Analysis\\bilawal_dhamaar_2\\working_composition\\0_row24_col14_x403_y522_w9_h21.png"
             ],
             [
-                "Analysis\\multiple_page\\working_composition\\1_row69_col13_x469_y598_w7_h13.png"
+                "Analysis\\bilawal_dhamaar_2\\working_composition\\0_row24_col15_x423_y526_w7_h13.png"
             ],
             [
-                "Analysis\\multiple_page\\working_composition\\1_row69_col14_x494_y599_w11_h13.png"
+                "Analysis\\bilawal_dhamaar_2\\working_composition\\0_row24_col16_x449_y527_w10_h13.png"
             ],
             [
-                "Analysis\\multiple_page\\working_composition\\1_row69_col15_x512_y599_w5_h14.png"
+                "Analysis\\bilawal_dhamaar_2\\working_composition\\0_row24_col17_x471_y526_w8_h12.png"
             ]
         ],
         "meend_list": [
@@ -1016,8 +760,323 @@
             "",
             "",
             "",
-            "S",
-            "E",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            ""
+        ]
+    },
+    "subgroup_26_27": {
+        "swar_list": [
+            [
+                "Analysis\\bilawal_dhamaar_2\\working_composition\\0_row26_col1_x114_y577_w15_h16.png"
+            ],
+            [
+                "Analysis\\bilawal_dhamaar_2\\working_composition\\0_row26_col2_x140_y576_w10_h17.png"
+            ],
+            [
+                "Analysis\\bilawal_dhamaar_2\\working_composition\\0_row26_col3_x161_y585_w9_h4.png"
+            ],
+            [
+                "Analysis\\bilawal_dhamaar_2\\working_composition\\0_row26_col4_x179_y558_w8_h16.png"
+            ],
+            [
+                "Analysis\\bilawal_dhamaar_2\\working_composition\\0_row26_col5_x185_y576_w10_h18.png"
+            ],
+            [
+                "Analysis\\bilawal_dhamaar_2\\working_composition\\0_row26_col6_x208_y585_w10_h4.png"
+            ],
+            [
+                "Analysis\\bilawal_dhamaar_2\\working_composition\\0_row26_col7_x238_y585_w10_h5.png"
+            ],
+            [
+                "Analysis\\bilawal_dhamaar_2\\working_composition\\0_row26_col8_x274_y577_w10_h16.png"
+            ],
+            [
+                "Analysis\\bilawal_dhamaar_2\\working_composition_segmented\\0_row26_col9_x300_y575_w12_h17_lower.png"
+            ],
+            [
+                "Analysis\\bilawal_dhamaar_2\\working_composition\\0_row26_col10_x337_y585_w10_h4.png"
+            ],
+            [
+                "Analysis\\bilawal_dhamaar_2\\working_composition\\0_row26_col11_x368_y585_w12_h4.png"
+            ],
+            [
+                "Analysis\\bilawal_dhamaar_2\\working_composition\\0_row26_col12_x402_y576_w15_h17.png"
+            ],
+            [
+                "Analysis\\bilawal_dhamaar_2\\working_composition\\0_row26_col13_x424_y575_w7_h18.png"
+            ],
+            [
+                "Analysis\\bilawal_dhamaar_2\\working_composition\\0_row26_col14_x441_y575_w15_h18.png"
+            ],
+            [
+                "Analysis\\bilawal_dhamaar_2\\working_composition\\0_row26_col15_x463_y576_w15_h17.png"
+            ]
+        ],
+        "kann_swar_list": [
+            [
+                "Analysis\\bilawal_dhamaar_2\\working_composition\\0_row26_col1_x113_y560_w13_h13.png"
+            ],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [
+                "Analysis\\bilawal_dhamaar_2\\working_composition_segmented\\0_row26_col9_x300_y561_w12_h12_upper.png"
+            ],
+            [],
+            [],
+            [
+                "Analysis\\bilawal_dhamaar_2\\working_composition\\0_row26_col12_x397_y560_w12_h13.png"
+            ],
+            [],
+            [],
+            []
+        ],
+        "swar_articulation_checks": [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+        ],
+        "lyrics_articulation_checks": [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+        ],
+        "lyrics_list": [
+            [
+                "Analysis\\bilawal_dhamaar_2\\working_composition\\0_row27_col1_x114_y604_w13_h17.png"
+            ],
+            [
+                "Analysis\\bilawal_dhamaar_2\\working_composition\\0_row27_col2_x142_y609_w8_h11.png"
+            ],
+            [
+                "Analysis\\bilawal_dhamaar_2\\working_composition\\0_row27_col3_x160_y608_w8_h13.png"
+            ],
+            [
+                "Analysis\\bilawal_dhamaar_2\\working_composition\\0_row27_col5_x186_y610_w9_h12.png"
+            ],
+            [
+                "Analysis\\bilawal_dhamaar_2\\working_composition\\0_row27_col6_x210_y609_w8_h12.png"
+            ],
+            [
+                "Analysis\\bilawal_dhamaar_2\\working_composition\\0_row27_col7_x238_y609_w8_h11.png"
+            ],
+            [
+                "Analysis\\bilawal_dhamaar_2\\working_composition\\0_row27_col8_x274_y609_w10_h17.png"
+            ],
+            [
+                "Analysis\\bilawal_dhamaar_2\\working_composition\\0_row27_col9_x304_y609_w9_h13.png"
+            ],
+            [
+                "Analysis\\bilawal_dhamaar_2\\working_composition\\0_row27_col10_x341_y609_w8_h12.png"
+            ],
+            [
+                "Analysis\\bilawal_dhamaar_2\\working_composition\\0_row27_col11_x372_y609_w7_h12.png"
+            ],
+            [
+                "Analysis\\bilawal_dhamaar_2\\working_composition\\0_row27_col12_x402_y603_w10_h18.png"
+            ],
+            [
+                "Analysis\\bilawal_dhamaar_2\\working_composition\\0_row27_col13_x427_y609_w7_h12.png"
+            ],
+            [
+                "Analysis\\bilawal_dhamaar_2\\working_composition\\0_row27_col14_x446_y609_w9_h13.png"
+            ],
+            [
+                "Analysis\\bilawal_dhamaar_2\\working_composition\\0_row27_col15_x470_y608_w8_h14.png"
+            ]
+        ],
+        "meend_list": [
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            ""
+        ]
+    },
+    "subgroup_29_33": {
+        "swar_list": [
+            [
+                "Analysis\\bilawal_dhamaar_2\\working_composition\\0_row30_col1_x113_y663_w11_h12.png"
+            ],
+            [
+                "Analysis\\bilawal_dhamaar_2\\working_composition_segmented\\0_row30_col2_x133_y658_w21_h12_seg1.png",
+                "Analysis\\bilawal_dhamaar_2\\working_composition_segmented\\0_row30_col2_x133_y658_w21_h12_seg2.png"
+            ],
+            [
+                "Analysis\\bilawal_dhamaar_2\\working_composition\\0_row30_col3_x163_y657_w8_h19.png"
+            ],
+            [
+                "Analysis\\bilawal_dhamaar_2\\working_composition\\0_row30_col4_x181_y658_w15_h17.png"
+            ],
+            [
+                "Analysis\\bilawal_dhamaar_2\\working_composition\\0_row30_col5_x203_y658_w15_h17.png"
+            ],
+            [
+                "Analysis\\bilawal_dhamaar_2\\working_composition\\0_row30_col6_x239_y663_w10_h12.png"
+            ],
+            [
+                "Analysis\\bilawal_dhamaar_2\\working_composition_segmented\\0_row30_col7_x265_y658_w19_h14_seg1.png",
+                "Analysis\\bilawal_dhamaar_2\\working_composition_segmented\\0_row30_col7_x265_y658_w19_h14_seg2.png"
+            ],
+            [
+                "Analysis\\bilawal_dhamaar_2\\working_composition\\0_row30_col8_x303_y662_w10_h13.png"
+            ],
+            [
+                "Analysis\\bilawal_dhamaar_2\\working_composition\\0_row30_col10_x336_y662_w11_h14.png"
+            ],
+            [
+                "Analysis\\bilawal_dhamaar_2\\working_composition\\0_row30_col11_x370_y667_w10_h4.png"
+            ],
+            [],
+            [],
+            [],
+            []
+        ],
+        "kann_swar_list": [
+            [
+                "Analysis\\bilawal_dhamaar_2\\working_composition\\0_row29_col1_x112_y645_w10_h10.png"
+            ],
+            [],
+            [],
+            [],
+            [],
+            [
+                "Analysis\\bilawal_dhamaar_2\\working_composition\\0_row29_col6_x233_y645_w10_h9.png"
+            ],
+            [],
+            [
+                "Analysis\\bilawal_dhamaar_2\\working_composition\\0_row29_col8_x298_y646_w7_h10.png"
+            ],
+            [
+                "Analysis\\bilawal_dhamaar_2\\working_composition\\0_row29_col10_x332_y646_w9_h10.png"
+            ],
+            [],
+            [],
+            [],
+            [],
+            []
+        ],
+        "swar_articulation_checks": [
+            false,
+            true,
+            false,
+            false,
+            false,
+            false,
+            true,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+        ],
+        "lyrics_articulation_checks": [
+            false,
+            true,
+            false,
+            false,
+            false,
+            false,
+            true,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+        ],
+        "lyrics_list": [
+            [
+                "Analysis\\bilawal_dhamaar_2\\working_composition\\0_row32_col1_x113_y688_w15_h16.png"
+            ],
+            [
+                "Analysis\\bilawal_dhamaar_2\\working_composition_segmented\\0_row32_col2_x138_y691_w13_h11_seg1.png"
+            ],
+            [
+                "Analysis\\bilawal_dhamaar_2\\working_composition\\0_row32_col3_x167_y692_w7_h12.png"
+            ],
+            [
+                "Analysis\\bilawal_dhamaar_2\\working_composition\\0_row32_col4_x185_y692_w12_h13.png"
+            ],
+            [
+                "Analysis\\bilawal_dhamaar_2\\working_composition\\0_row32_col5_x207_y692_w10_h12.png"
+            ],
+            [
+                "Analysis\\bilawal_dhamaar_2\\working_composition\\0_row32_col6_x238_y691_w15_h13.png"
+            ],
+            [
+                "Analysis\\bilawal_dhamaar_2\\working_composition_segmented\\0_row32_col7_x270_y690_w13_h11_seg1.png"
+            ],
+            [
+                "Analysis\\bilawal_dhamaar_2\\working_composition\\0_row32_col8_x304_y691_w8_h12.png"
+            ],
+            [
+                "Analysis\\bilawal_dhamaar_2\\working_composition\\0_row32_col10_x334_y691_w14_h13.png"
+            ],
+            [
+                "Analysis\\bilawal_dhamaar_2\\working_composition\\0_row32_col11_x371_y691_w8_h12.png"
+            ],
+            [],
+            [],
+            [],
+            []
+        ],
+        "meend_list": [
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
             "",
             "",
             "",

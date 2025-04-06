@@ -5,23 +5,16 @@ def save_composition_metadata(
     raag_name: str,
     taal_name: str,
     lay: str,
-    sthayee_sam: int,
-    antara_sam: Optional[int] = None,
-    sanchari_sam: Optional[int] = None,
-    aabhog_sam: Optional[int] = None,
     source_name: Optional[str] = None,
     page_number: Optional[int] = None,
     filename: str = "composition_metadata.json"
 ):
-    """Save composition metadata to JSON file"""
+
+    """Save only basic metadata (raag, taal, lay, source)"""
     data = {
         "raag_name": raag_name,
         "taal_name": taal_name,
         "lay": lay,
-        "sthayee": {"sam_beat": sthayee_sam},
-        "antara": {"sam_beat": antara_sam} if antara_sam else None,
-        "sanchari": {"sam_beat": sanchari_sam} if sanchari_sam else None,
-        "aabhog": {"sam_beat": aabhog_sam} if aabhog_sam else None,
         "source": {
             "name": source_name,
             "page": page_number
@@ -31,6 +24,35 @@ def save_composition_metadata(
     # Remove None values
     data = {k: v for k, v in data.items() if v is not None}
     
+    with open(filename, 'w', encoding='utf-8') as f:
+        json.dump(data, f, ensure_ascii=False, indent=4)
+
+def update_composition_metadata(
+    sthayee_sam_beat: Optional[int] = None,
+    antara_sam_beat: Optional[int] = None,
+    sanchari_sam_beat: Optional[int] = None,
+    aabhog_sam_beat: Optional[int] = None,
+    filename: str = "composition_metadata.json"
+):
+    """Update existing metadata with section sam beats"""
+    try:
+        # Load existing data
+        with open(filename, 'r', encoding='utf-8') as f:
+            data = json.load(f)
+    except FileNotFoundError:
+        data = {}
+    
+    # Update only the provided sections
+    if sthayee_sam_beat:
+        data["sthayee"] = {"sam_beat": sthayee_sam_beat}
+    if antara_sam_beat:
+        data["antara"] = {"sam_beat": antara_sam_beat}
+    if sanchari_sam_beat:
+        data["sanchari"] = {"sam_beat": sanchari_sam_beat}
+    if aabhog_sam_beat:
+        data["aabhog"] = {"sam_beat": aabhog_sam_beat}
+    
+    # Save back
     with open(filename, 'w', encoding='utf-8') as f:
         json.dump(data, f, ensure_ascii=False, indent=4)
 
@@ -292,3 +314,28 @@ def load_predictions(input_file="predictions.json"):
         tuple(map(int, key.split('_')[1:3])): value  # Converts "subgroup_26_31" to (26, 31)
         for key, value in data['predictions'].items()
     }
+
+# ------------------------------------------------------------------------------------------------------------
+
+def save_categorized_flatten_predictions(categorized_flatten, filename="categorized_flatten_predictions.json"):
+    with open(filename, 'w') as f:
+        json.dump(categorized_flatten, f, indent=4)
+
+def load_categorized_flatten_predictions(section_name, filename="categorized_flatten_predictions.json"):
+    """Loads a specific section if it exists"""
+    try:
+        with open(filename) as f:
+            data = json.load(f)
+            return data.get(section_name)
+    except (FileNotFoundError, json.JSONDecodeError):
+        return None
+    
+
+# ------------------------------------------------------------------------------------------------------------
+
+def load_kern_map(filename="kern_map.json"):
+    try:
+        with open(filename, "r") as f:
+            return json.load(f)
+    except FileNotFoundError:
+        return None  # Handle case when no file exists yet

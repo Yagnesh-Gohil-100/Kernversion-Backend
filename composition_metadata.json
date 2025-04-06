@@ -1,15 +1,15 @@
 {
-    "raag_name": "Yaman",
-    "taal_name": "Ektaal",
+    "raag_name": "Bilawal",
+    "taal_name": "Dhamaar",
     "lay": "Vilambit",
+    "source": {
+        "name": "hindustani-sangeet-paddhati-kramik-pustak-malika-part-2",
+        "page": 120
+    },
     "sthayee": {
         "sam_beat": 5
     },
     "antara": {
-        "sam_beat": 5
-    },
-    "source": {
-        "name": "hindustani-sangeet-paddhati-kramik-pustak-malika-part-2",
-        "page": null
+        "sam_beat": 1
     }
 }

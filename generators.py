@@ -345,3 +345,260 @@ def generate_predictions(subgroup_results):
         }
     
     return predictions
+
+# ----------------------------------------------------------------------------------------------------------
+
+from save_and_load import get_taal_field, get_metadata_field
+
+# Function to generate kern code based on user input
+def generate_metadata_header(raag, taal, lay):
+    
+    time_signature = get_taal_field(taal, field_name='time_signature')
+    
+    # Set tempo based on lay
+    # Tempo mapping
+    tempo_map = {
+        "vilambit": 60,
+        "madhya": 90,
+        "drut": 150
+    }
+
+    tempo = tempo_map.get(lay.lower(), 60)  # Default to vilambit
+
+    metadata_headers = [
+    f"!!!raag: {raag}",
+    f"!!!taal: {taal}",
+    f"!!!lay: {lay}"
+  ]
+
+    source_name = get_metadata_field(field="source.name")
+    page_num = get_metadata_field(field="source.page")
+
+    if source_name:
+        metadata_headers.append(f"!!!source: {source_name}")
+    if page_num:
+        metadata_headers.append(f"!!!page: {page_num}")
+
+    # Add reference records with proper spacing
+    reference_records = [
+        "**kern",
+        f"*M{time_signature}",
+        f"*MM{tempo}",
+        "*clefG2",  # Added treble clef for completeness
+        "*c:"
+    ]
+
+    metadata_headers.extend(reference_records)
+
+    kern_str = "\n".join(metadata_headers)
+    return kern_str.strip(), metadata_headers
+
+
+# ----------------------------------------------------------------------------------------------------------
+
+from save_and_load import load_kern_map
+
+def handle_extension(kern_output):
+    """Handle extension cases for '-' in swar"""
+    if not kern_output:
+        return
+    
+    # Pop division markers if they exist
+    popped = []
+    while kern_output and (kern_output[-1].strip().startswith('==') or kern_output[-1].strip() == '='):
+        popped.append(kern_output.pop())
+    
+    if not kern_output:
+        kern_output.extend(popped)
+        return
+    
+    last = kern_output[-1].strip()
+    
+    # Check if the last element has 'S' suffix
+    has_S_suffix = last.endswith('S')
+    if has_S_suffix:
+        last = last[:-1]  # Remove 'S' temporarily
+    
+    # Case 3: Ends with ']'
+    if last.endswith(']'):
+        kern_code = last[:-1]
+        kern_output[-1] = kern_code
+        modified = modify_kern_code(kern_code)
+        if isinstance(modified, tuple):
+            kern_output[-1] = modified[0] + ('S' if has_S_suffix else '') + '\n'
+            kern_output.append(modified[1] + ('S' if has_S_suffix else '') + '\n')
+        else:
+            kern_output[-1] = modified + ('S' if has_S_suffix else '') + ']\n'
+    
+    # Case 4,5,6: Regular kern codes
+    else:
+        modified = modify_kern_code(last)
+        if isinstance(modified, tuple):
+            kern_output[-1] = modified[0] + ('S' if has_S_suffix else '') + '\n'
+            kern_output.append(modified[1] + ('S' if has_S_suffix else '') + '\n')
+        else:
+            kern_output[-1] = modified + ('S' if has_S_suffix else '') + '\n'
+    
+    # Push back any popped division markers
+    kern_output.extend(reversed(popped))
+
+def modify_kern_code(kern_code):
+    """Modify kern code according to extension rules"""
+    # Split into number and code parts
+    num_part = ''
+    code_part = kern_code
+    for i, c in enumerate(kern_code):
+        if c.isdigit():
+            num_part += c
+        else:
+            code_part = kern_code[i:]
+            break
+    
+    if not num_part:
+        return '2' + code_part
+    
+    num = int(num_part)
+    
+    if num == 4:
+        return '2' + code_part
+    elif num < 4:
+        return f'{num}.' + code_part
+    else:  # num > 4
+        return (f'[{num}{code_part}', f'4{code_part}]')
+
+def generate_kern(flat_kann, flat_swar, divisions, beat_count):
+    
+    kern_map = load_kern_map()
+
+    kern_output = []
+    total_beats = len(flat_kann)
+    cumulative_divisions = []
+    current_sum = 0
+    
+    while current_sum <= total_beats:
+        for d in divisions:
+            current_sum += d
+            if current_sum >= total_beats:
+                break
+            cumulative_divisions.append(current_sum)
+
+    first_empty_flag = True
+    
+    for i in range(total_beats):
+        # Handle major divisions (beat_count)
+        if i % beat_count == 0:
+            kern_output.append(f"\n=={i // beat_count + 1}\n")
+        
+        # Handle subdivisions
+        if i in cumulative_divisions and i % beat_count != 0:
+            kern_output.append("\n=\n")
+        
+        # Process current beat
+        kann = flat_kann[i]
+        swar = flat_swar[i]
+        
+        # Handle empty lists
+        if not kann and not swar and first_empty_flag:
+            kern_output.append("4ryy\n")
+            continue
+
+        # Do not need to add rests at the last
+        if not kann and not swar and not first_empty_flag:
+            # Join and clean up newlines
+            kern_str = ''.join(kern_output)
+            kern_str = kern_str.replace('\n\n', '\n')  # Remove duplicate newlines
+            return kern_str.strip(), kern_output
+
+        # set flag to false to handle empty lists at the end of composition
+        first_empty_flag = False
+        
+        # Process non-empty lists
+        for idx in range(max(len(kann), len(swar))):
+            # Process kann if exists
+            if idx < len(kann):
+                k = kann[idx]
+                if k != '':
+                    kern_output.append(f"{kern_map[k]}q\n")
+            
+            # Process swar if exists
+            if idx < len(swar):
+                s = swar[idx]
+                if s == '-':
+                    handle_extension(kern_output)
+                else:
+                    # Handle parenthesized elements in swar
+                    is_parenthesized = s.startswith('(') and s.endswith(')')
+                    s_clean = s[1:-1] if is_parenthesized else s
+                    duration = 4 * len(swar)
+                    kern_code = f"{duration}{kern_map[s_clean]}"
+                    if is_parenthesized:
+                        kern_code += 'S'
+                    kern_output.append(f"{kern_code}\n")
+    
+    # Join and clean up newlines
+    kern_str = ''.join(kern_output)
+    kern_str = kern_str.replace('\n\n', '\n')  # Remove duplicate newlines
+    return kern_str.strip(), kern_output
+
+def generate_transition(kern_output, from_vibhaag, to_vibhaag):
+    # count number of divisions passed in last beat cycle, next taali will be at this count index
+    count_division = 0
+
+    for i in reversed(range(len(kern_output))):
+        if kern_output[i].startswith('\n=='):
+            break
+        elif kern_output[i] == '\n=\n':
+            count_division += 1
+
+    # get index of sam in from vibhaag
+    from_sam_index = -1
+    for i in range(len(from_vibhaag)):
+        if from_vibhaag[i] == 'X':
+            from_sam_index = i
+            break
+
+    # get index of sam in to vibhaag
+    to_sam_index = -1
+    for i in range(len(to_vibhaag)):
+        if to_vibhaag[i] == 'X':
+            to_sam_index = i
+            break
+    
+    i = 0
+    x = ((from_sam_index + i) % len(from_vibhaag))
+
+    while ((from_sam_index + i) % len(from_vibhaag)) != count_division:
+        i += 1
+
+    # find next taali index in to vibhaag
+    next_taali_index = ((to_sam_index + i) % len(from_vibhaag))
+
+    # starting from index as per count_division, number of divisions to repeat
+    count_repeat_division = (len(from_vibhaag) - next_taali_index) % len(from_vibhaag)
+
+    count = -1
+    i = 0
+    while count < count_division:
+        item = kern_output[i]
+        if item.startswith('\n==') or item == ('\n=\n'):
+            count += 1
+        i += 1
+
+    
+    # transition output starts from index i
+    transition_kern = []
+
+    count = 0
+    while count < count_repeat_division:
+        item = kern_output[i]
+        if item.startswith('\n==') or item == ('\n=\n'):
+            count += 1
+            item = '\n=\n'
+
+        transition_kern.append(item)
+        i += 1
+
+    # Join and clean up newlines
+    kern_str = ''.join(transition_kern)
+    kern_str = kern_str.replace('\n\n', '\n')  # Remove duplicate newlines
+    return kern_str.strip(), transition_kern
