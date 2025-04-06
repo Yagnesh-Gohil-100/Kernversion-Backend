@@ -137,10 +137,11 @@ def finalize_segmentation_and_lists():
 
 def categorize_flatten_predictions(predictions, row_categories):
     """Categorizes predictions into sthayee, antara, sanchari, aabhog"""
-    sthayee = {"swar": [], "kann_swar": []} if "sthayee" in row_categories else None
-    antara = {"swar": [], "kann_swar": []}  if "antara" in row_categories else None
-    sanchari = {"swar": [], "kann_swar": []} if "sanchari" in row_categories else None
-    aabhog = {"swar": [], "kann_swar": []} if "aabhog" in row_categories else None
+    sthayee = {"swar": [], "kann_swar": [], "meend": []} if "sthayee" in row_categories else None
+    antara = {"swar": [], "kann_swar": [], "meend": []} if "antara" in row_categories else None
+    sanchari = {"swar": [], "kann_swar": [], "meend": []} if "sanchari" in row_categories else None
+    aabhog = {"swar": [], "kann_swar": [], "meend": []} if "aabhog" in row_categories else None
+
 
     for subgroup_range, subgroup_data in predictions.items():
         start_row = subgroup_range[0]
@@ -161,6 +162,7 @@ def categorize_flatten_predictions(predictions, row_categories):
             if target:  # Only add if category exists
                 target["swar"].extend(subgroup_data["swar"])
                 target["kann_swar"].extend(subgroup_data["kann_swar"])
+                target["meend"].extend(subgroup_data["meend"])
     
     return {
         "sthayee": sthayee,

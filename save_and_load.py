@@ -292,7 +292,8 @@ def save_predictions(predictions, output_file="predictions.json"):
         "predictions": {
             f"subgroup_{start}_{end}": {                            # Convert (26,31) to "subgroup_26_31"
                 "kann_swar": results["predicted_kann_swar_list"],
-                "swar": results["predicted_swar_list"]
+                "swar": results["predicted_swar_list"],
+                "meend": results["meend_list"]
             }
             for (start, end), results in predictions.items()  
         }
