@@ -1,15 +1,9 @@
 {
-    "raag_name": "Bilawal",
-    "taal_name": "Dhamaar",
+    "raag_name": "YamanKalyaan",
+    "taal_name": "Chautaal",
     "lay": "Vilambit",
     "source": {
         "name": "hindustani-sangeet-paddhati-kramik-pustak-malika-part-2",
-        "page": 120
-    },
-    "sthayee": {
-        "sam_beat": 5
-    },
-    "antara": {
-        "sam_beat": 1
+        "page": 20
     }
 }

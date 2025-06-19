@@ -5,7 +5,11 @@ def create_mapping(coordinates, aspect_ratio_threshold, is_row=True):
     if not coordinates:
         return mapping
 
-    for i, (x, y, w, h) in enumerate(coordinates):
+    for x, y, w, h in coordinates:
+        # Skip if width or height is zero to avoid division errors
+        if w == 0 or h == 0:
+            continue
+
         if is_row:
             if h / w > aspect_ratio_threshold:
                 continue
@@ -17,7 +21,7 @@ def create_mapping(coordinates, aspect_ratio_threshold, is_row=True):
             coord = x
             size = w
 
-        if i == 0:
+        if not mapping:
             upper_limit = coord + int(size / 2)
             lower_limit = coord
             mapping.append((number, lower_limit, upper_limit))

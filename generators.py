@@ -45,7 +45,7 @@ def generate_lists(subgroup_range, row_col_images, is_first_subgroup, beat_count
     # Find the kann swar row in this subgroup
     kann_swar_row = None
     for row in kann_swar_rows:
-        if start_row <= row <= end_row:
+        if start_row <= row <= end_row and row < swar_row:
             kann_swar_row = row
             break
     
@@ -55,7 +55,7 @@ def generate_lists(subgroup_range, row_col_images, is_first_subgroup, beat_count
     # Find the lyrics row in this subgroup
     lyrics_row = None
     for row in lyrics_rows:
-        if start_row <= row <= end_row:
+        if start_row <= row <= end_row and row > swar_row:
             lyrics_row = row
             break
     
@@ -133,21 +133,42 @@ def generate_lists(subgroup_range, row_col_images, is_first_subgroup, beat_count
                 swar_list.append(swar)
                 kann_swar_list.append(kann_swar)
     
+    # # Handle articulation rows
+    # for articulation_row in articulation_rows_in_subgroup:
+    #     # Find the row just before the articulation row
+    #     prev_row = articulation_row - 1
+    #     if prev_row in swar_rows:
+    #         # Swar articulation
+    #         articulation_images = row_col_images[articulation_row]
+    #         articulation_cols = sorted(articulation_images.keys())
+    #         for i, col in enumerate(swar_cols):
+    #             if col in articulation_cols:
+    #                 swar_articulation_checks[i] = True
+    #     elif prev_row in lyrics_rows:
+    #         # Lyrics articulation
+    #         articulation_images = row_col_images[articulation_row]
+    #         articulation_cols = sorted(articulation_images.keys())
+    #         for i, col in enumerate(lyrics_cols):
+    #             if col in articulation_cols:
+    #                 lyrics_articulation_checks[i] = True
+
     # Handle articulation rows
     for articulation_row in articulation_rows_in_subgroup:
         # Find the row just before the articulation row
         prev_row = articulation_row - 1
         if prev_row in swar_rows:
             # Swar articulation
-            articulation_images = row_col_images[articulation_row]
-            articulation_cols = sorted(articulation_images.keys())
+            articulation_images = row_col_images.get(articulation_row, {})
+            # Filter out None keys and then sort
+            articulation_cols = sorted([col for col in articulation_images.keys() if col is not None])
             for i, col in enumerate(swar_cols):
                 if col in articulation_cols:
                     swar_articulation_checks[i] = True
         elif prev_row in lyrics_rows:
             # Lyrics articulation
-            articulation_images = row_col_images[articulation_row]
-            articulation_cols = sorted(articulation_images.keys())
+            articulation_images = row_col_images.get(articulation_row, {})
+            # Filter out None keys and then sort
+            articulation_cols = sorted([col for col in articulation_images.keys() if col is not None])
             for i, col in enumerate(lyrics_cols):
                 if col in articulation_cols:
                     lyrics_articulation_checks[i] = True
@@ -222,11 +243,7 @@ from identifications import identify_meend_and_kann_swar
 def update_kann_swar_and_generate_meend_lists():
     """
     Function to update kann swar and meend lists based on segmentation.
-    
-    Parameters:
-    - subgroup_results: Dictionary containing subgroup results.
     """
-
     # Load existing lists from JSON
     subgroup_results = load_lists_in_subgroups()
     
@@ -268,6 +285,11 @@ def update_kann_swar_and_generate_meend_lists():
                         # Find the end of meend
                         j = i + 1
                         while j < len(swar_list):
+                            # Skip empty swar positions
+                            if not swar_list[j]:  # Check if the list is empty
+                                j += 1
+                                continue
+                                
                             swar_image_path = swar_list[j][0]
                             swar_filename = os.path.basename(swar_image_path)
                             swar_x = int(swar_filename.split('_x')[1].split('_')[0])
@@ -284,7 +306,9 @@ def update_kann_swar_and_generate_meend_lists():
                         if left_part is not None:
                             kann_swar_list[i] = [save_kann_swar_segment_from_meend(left_part, subgroup_range, i, 'left')]
                         if right_part is not None:
-                            kann_swar_list[j - 1] = [save_kann_swar_segment_from_meend(right_part, subgroup_range, j - 1, 'right')]
+                            # Make sure j-1 is within bounds
+                            if j - 1 < len(kann_swar_list):
+                                kann_swar_list[j - 1] = [save_kann_swar_segment_from_meend(right_part, subgroup_range, j - 1, 'right')]
                         if left_part is None and right_part is None:
                             kann_swar_list[i] = []  # Remove the original image if no segmentation
                         

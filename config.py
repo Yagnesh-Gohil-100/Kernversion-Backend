@@ -7,9 +7,9 @@
 # }
 
 PATHS = {
-    'pdf_path': 'Analysis/bilawal_dhamaar.pdf',
-    'initial_segmentation': 'Analysis/bilawal_dhamaar_2',
-    'working_composition': 'Analysis/bilawal_dhamaar_2/working_composition',
-    'working_composition_segmented': 'Analysis/bilawal_dhamaar_2/working_composition_segmented',
-    'model': 'models/music_model_2025_v1.h5',
+    'pdf_path': 'Analysis/damage.pdf',
+    'initial_segmentation': 'Analysis/damage',
+    'working_composition': 'Analysis/damage/working_composition',
+    'working_composition_segmented': 'Analysis/damage/working_composition_segmented',
+    'model': 'models/music_model_2025_v2.h5',
 }

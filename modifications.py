@@ -2,29 +2,91 @@ import os
 from filename_utils import get_row_and_col_number
 from config import PATHS
 
+# def update_subgroups(subgroups):
+#     """
+#     Processes subgroups by checking if the first subgroup needs to be split into two.
+#     """
+#     composition_folder = PATHS['working_composition']
+#     images = os.listdir(composition_folder)
+#     images.sort(key=lambda x: get_row_and_col_number(x)[0])  # Sort by row number
+    
+#     first_subgroup_start, first_subgroup_end = subgroups[0]
+#     first_valid_row = first_subgroup_start
+
+#     # Only process rows from the first valid row
+#     first_group_images = [img for img in images if get_row_and_col_number(img)[0] >= first_valid_row]
+
+#     # To track if we need to split the first subgroup
+#     first_row_images = [img for img in first_group_images if get_row_and_col_number(img)[0] == first_valid_row]
+#     second_row_images = [img for img in first_group_images if get_row_and_col_number(img)[0] == first_valid_row + 1]
+
+#     # Ensure we have valid rows and columns to process
+#     if first_row_images and second_row_images:
+#         # Sort images by column number and check the first (lowest column number) image
+#         first_row_images.sort(key=lambda x: get_row_and_col_number(x)[1])
+#         second_row_images.sort(key=lambda x: get_row_and_col_number(x)[1])
+        
+#         first_row_col = get_row_and_col_number(first_row_images[0])[1]
+#         second_row_col = get_row_and_col_number(second_row_images[0])[1]
+
+#         if first_row_col is not None and second_row_col is not None and first_row_col > 1 and second_row_col > 1:
+#             # Now, let's iterate through rows to find where col = 1 begins
+#             new_first_end = first_valid_row  # Default in case we find no rows with col = 1
+#             for img in first_group_images:
+#                 row, col = get_row_and_col_number(img)
+#                 if row > first_valid_row and col == 1:
+#                     new_first_end = row
+#                     break
+
+#             # Update the subgroups
+#             first_subgroup = (first_valid_row, new_first_end)
+#             second_subgroup = (new_first_end, first_subgroup_end)
+#             subgroups[0] = first_subgroup
+#             subgroups.insert(1, second_subgroup)
+    
+#     return subgroups
+
 def update_subgroups(subgroups):
     """
     Processes subgroups by checking if the first subgroup needs to be split into two.
     """
     composition_folder = PATHS['working_composition']
     images = os.listdir(composition_folder)
-    images.sort(key=lambda x: get_row_and_col_number(x)[0])  # Sort by row number
+    
+    # Modified sorting to handle None values
+    def safe_sort_key(img):
+        row, col = get_row_and_col_number(img)
+        return (row if row is not None else float('inf'), 
+                col if col is not None else float('inf'))
+    
+    images.sort(key=safe_sort_key)  # Sort by row then column
     
     first_subgroup_start, first_subgroup_end = subgroups[0]
     first_valid_row = first_subgroup_start
 
-    # Only process rows from the first valid row
-    first_group_images = [img for img in images if get_row_and_col_number(img)[0] >= first_valid_row]
+    # Filter images with valid row numbers
+    first_group_images = []
+    for img in images:
+        row, col = get_row_and_col_number(img)
+        if row is not None and row >= first_valid_row:
+            first_group_images.append(img)
 
     # To track if we need to split the first subgroup
-    first_row_images = [img for img in first_group_images if get_row_and_col_number(img)[0] == first_valid_row]
-    second_row_images = [img for img in first_group_images if get_row_and_col_number(img)[0] == first_valid_row + 1]
+    first_row_images = []
+    second_row_images = []
+    
+    for img in first_group_images:
+        row, col = get_row_and_col_number(img)
+        if row == first_valid_row and col is not None:
+            first_row_images.append(img)
+        elif row == first_valid_row + 1 and col is not None:
+            second_row_images.append(img)
 
     # Ensure we have valid rows and columns to process
     if first_row_images and second_row_images:
-        # Sort images by column number and check the first (lowest column number) image
-        first_row_images.sort(key=lambda x: get_row_and_col_number(x)[1])
-        second_row_images.sort(key=lambda x: get_row_and_col_number(x)[1])
+        # Safe sorting that handles None values (though we've already filtered them)
+        first_row_images.sort(key=lambda x: get_row_and_col_number(x)[1] or float('inf'))
+        second_row_images.sort(key=lambda x: get_row_and_col_number(x)[1] or float('inf'))
         
         first_row_col = get_row_and_col_number(first_row_images[0])[1]
         second_row_col = get_row_and_col_number(second_row_images[0])[1]
@@ -34,15 +96,17 @@ def update_subgroups(subgroups):
             new_first_end = first_valid_row  # Default in case we find no rows with col = 1
             for img in first_group_images:
                 row, col = get_row_and_col_number(img)
-                if row > first_valid_row and col == 1:
-                    new_first_end = row
-                    break
+                if row is not None and col is not None:
+                    if row > first_valid_row and col == 1:
+                        new_first_end = row
+                        break
 
-            # Update the subgroups
-            first_subgroup = (first_valid_row, new_first_end)
-            second_subgroup = (new_first_end, first_subgroup_end)
-            subgroups[0] = first_subgroup
-            subgroups.insert(1, second_subgroup)
+            # Update the subgroups only if we found a valid split point
+            if new_first_end != first_valid_row:
+                first_subgroup = (first_valid_row, new_first_end)
+                second_subgroup = (new_first_end, first_subgroup_end)
+                subgroups[0] = first_subgroup
+                subgroups.insert(1, second_subgroup)
     
     return subgroups
 
@@ -141,7 +205,6 @@ def categorize_flatten_predictions(predictions, row_categories):
     antara = {"swar": [], "kann_swar": [], "meend": []} if "antara" in row_categories else None
     sanchari = {"swar": [], "kann_swar": [], "meend": []} if "sanchari" in row_categories else None
     aabhog = {"swar": [], "kann_swar": [], "meend": []} if "aabhog" in row_categories else None
-
 
     for subgroup_range, subgroup_data in predictions.items():
         start_row = subgroup_range[0]
